@@ -102,34 +102,34 @@
            <h2 class=" font-bold text-2xl">Le tecnologie che uso:</h2>
         </div>
 
-        <div class="flex flex-row gap-25 p-10 justify-center items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 p-10 justify-center items-center">
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img class="w-30 hover:scale-110" src="./Loghi/html.png" alt="">
             </div>
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img class="w-30 hover:scale-110" src="./Loghi/css.png" alt="">
             </div>
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img class="w-30 hover:scale-110" src="./Loghi/jslogo.png" alt="">
             </div>
 
         </div>
 
         
-        <div class="flex flex-row gap-25 p-10 justify-center items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 p-10 justify-center items-center">
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img class="w-30 hover:scale-110" src="./Loghi/Bootstrap_logo.png" alt="">
             </div>
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img class="w-30 hover:scale-110" src="./Loghi/Tailwind CSS.png" alt="">
             </div>
 
-            <div>
+            <div class="flex justify-center items-center">
                 <img id="Portfolio" class="w-30 hover:scale-110" src="./Loghi/git.png" alt="">
             </div>
 
@@ -146,6 +146,7 @@
         <h2  class=" font-bold text-2xl">Portfolio:</h2>
      </div>
 <div id="breakpoint">
+
    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
           <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
             <a href=""><img class="w-full h-40 bg-zinc-200" src="./Portfolio/sunnyside.svg" alt="Card-Image">
@@ -172,26 +173,30 @@
           </div>
       </div>
 
-      <div class="grid grid-cols-1 pt-5 gap-4 md:grid-cols-3 sm:grid-cols-1 ">
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 pt-5">
         <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
-          <a href=""><img class="w-full h-40" src="./Portfolio/spacex.png" alt="Card-Image">
+          <a href=""><img class="w-full h-40 object-cover bg-zinc-200" src="./Portfolio/spacex.png" alt="Card-Image">
             <div class="p-4 text-center">
-            <h2 class="text-lg font-semibold text-white">Space X clone</h2>
-            <p class="text-white mt-2">Space X clone.</p></a>
+            <h2 class="text-lg font-semibold text-white">SpaceX clone:</h2>
+            <p class="text-white mt-2">Clone di space X realizzato con html, css, javascript.</p></a>
             </div>
         </div>
 
         <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
-          <a href=""><img class="w-full h-40 " src="./Portfolio/E-commerce.png" alt="Card-Image">
+          <a href=""><img class="w-full h-40 bg-white" src="./Portfolio/E-commerce.png" alt="Card-Image">
           <div class="p-4 text-center">
             <h2 class="text-lg font-semibold text-white">E-commerce:</h2>
-            <p class="text-white mt-2"> Coming soon...</p></a>
+            <p class="text-white mt-2">Coming soon...</p></a>
           </div>
         </div>
 
-     </div>
-
+        
+        </div>
     </div>
+
+      
+
+  </div>
   
     </section>
 
@@ -205,10 +210,12 @@
     <h3>Contatti:</h3>
   </div>
   
-<div class="pt-10 pl-4 flex" id="prova">
 
-  <form class="w-110 p-6 bg-black border-2 border-green-900 text-white rounded-lg sm:w-1/2 ">
-    <div class="mb-4">
+  <div class="pt-10 flex flex-col sm:flex-row sm:gap-8 sm:items-start" id="prova">
+
+
+    <form class="w-full sm:w-1/2 p-6 bg-black border-2 border-green-900 text-white rounded-lg mb-4 sm:mb-0">
+      <div class="mb-4">
       <label for="name" class="block text-sm font-semibold mb-2">Name</label>
       <input type="text" id="name" name="name" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your name">
     </div>
