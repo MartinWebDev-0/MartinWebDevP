@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>MartinWebDev</title>
+</head>
+
+<body class="bg-black text-white">
+    
+
+    <nav class="flex p-3 bg-green-900 text-white sticky top-0 z-10">
+
+        <a href="index.html">
+        <img  src="./animazione.png" 
+        alt=""
+        class="w-10 h-10 rounded-full bg-black border-1 border-white">
+        </a>
+
+
+        <div class="pl-2">
+           <svg id="language-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+           class="mt-2 ml-2 size-7 hover:text-green-400 cursor-pointer hover:scale-110">
+            <path stroke-linecap="round" 
+            stroke-linejoin="round" 
+            d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 
+            1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 
+            10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 
+            8.495a18.023 18.023 0 0 1-3.827-5.802" />
+            </svg>
+          </div>
+        
+            <!-- Menu lingua  -->
+            <div id="language-menu" class="absolute w-30 hidden">
+              <ul class="list-none flex flex-col pt-4">
+               <li data-lang="en" class="cursor-pointer hover:text-green-400">English</li>
+               <li data-lang="it" class="cursor-pointer hover:text-green-400">Italiano</li>
+              </ul>
+             </div>
+
+
+      <ul class="hidden sm:flex flex flex-row ml-auto gap-4 items-center">
+            <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#">Home</a></li>
+            <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#Portfolio">Portfolio</a></li>
+            <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#Contatti">Contatti</a></li>
+
+       
+        </ul>
+    </nav>
+
+ <!-- section 1 -->
+
+    <section class="flex text-center justify-center items-center h-screen ml-4">
+
+        <div class="mb-30">
+            <h1 class="font-bold text-6xl hover:text-green-400 transition delay-150">Benvenuto.</h1>
+            <p class="text-2xl hover:text-green-400 transition delay-150">Sono Martin, junior web developer.</p>
+
+            <a href="">
+                <img class="w-8 pt-5 ml-50 "
+                src="./github-white-icon.svg" 
+                 alt="github">
+                 
+            </a>
+
+            <div class="pt-10 pr-5 ">
+             <a href="#Contatti"><button class=" bg-green-900 rounded hover:border-green-400 hover:text-green-400 
+             transition delay-150 cursor-pointer p-2 border-2 border-white
+             transition-transform transform active:scale-90">
+                CONTATTAMI!
+              </button></a>
+              
+            </div>
+         
+        </div>
+
+        <svg id="scroll-animation" xmlns="http://www.w3.org/2000/svg"
+         fill="none" 
+         viewBox="0 0 24 24" 
+         stroke-width="1.5" stroke="currentColor" 
+         class="size-8 absolute left-1/2 transform -translate-x-1/2 bottom-1 cursor-pointer
+         hover:text-green-400 transition delay-150 hover:scale-110">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+        </svg>
+        
+          
+    </section>
+
+
+ <!-- Section 2 -->
+
+    <section>
+        <div class="flex justify-center items-center text-center">
+           <h2 class=" font-bold text-2xl">Le tecnologie che uso:</h2>
+        </div>
+
+        <div class="flex flex-row gap-25 p-10 justify-center items-center">
+
+            <div>
+                <img class="w-30 hover:scale-110" src="./Loghi/html.png" alt="">
+            </div>
+
+            <div>
+                <img class="w-30 hover:scale-110" src="./Loghi/css.png" alt="">
+            </div>
+
+            <div>
+                <img class="w-30 hover:scale-110" src="./Loghi/jslogo.png" alt="">
+            </div>
+
+        </div>
+
+        
+        <div class="flex flex-row gap-25 p-10 justify-center items-center">
+
+            <div>
+                <img class="w-30 hover:scale-110" src="./Loghi/Bootstrap_logo.png" alt="">
+            </div>
+
+            <div>
+                <img class="w-30 hover:scale-110" src="./Loghi/Tailwind CSS.png" alt="">
+            </div>
+
+            <div>
+                <img id="Portfolio" class="w-30 hover:scale-110" src="./Loghi/git.png" alt="">
+            </div>
+
+        </div>
+    </section>
+  
+
+   <!-- Section 3 -->
+    <section  >
+
+
+
+      <div class="flex justify-center items-center text-center p-5">
+        <h2  class=" font-bold text-2xl">Portfolio:</h2>
+     </div>
+<div id="breakpoint">
+   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
+            <a href=""><img class="w-full h-40 bg-zinc-200" src="./Portfolio/sunnyside.svg" alt="Card-Image">
+              <div class="p-4 text-center">
+              <h2 class="text-lg font-semibold text-white">Agency landing page:</h2>
+              <p class="text-white mt-2">La landing page di una design agency.</p></a>
+              </div>
+          </div>
+
+          <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
+            <a href=""><img class="w-full h-40 bg-white" src="./Portfolio/tesla.svg" alt="Card-Image">
+            <div class="p-4 text-center">
+              <h2 class="text-lg font-semibold text-white">Tesla car configurator:</h2>
+              <p class="text-white mt-2">Configuratore auto tesla realizzato con tailwind e javascript.</p></a>
+            </div>
+          </div>
+
+          <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
+            <a href=""><img class="w-full h-40" src="./Portfolio/images-n.png" alt="Card-Image">
+            <div class="p-4 text-center">
+              <h2 class="text-lg font-semibold text-white">Netflix clone:</h2>
+              <p class="text-white mt-2">Clone di netflix realizzato con css e javascript.</p></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="grid grid-cols-1 pt-5 gap-4 md:grid-cols-3 sm:grid-cols-1 ">
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
+          <a href=""><img class="w-full h-40" src="./Portfolio/spacex.png" alt="Card-Image">
+            <div class="p-4 text-center">
+            <h2 class="text-lg font-semibold text-white">Space X clone</h2>
+            <p class="text-white mt-2">Space X clone.</p></a>
+            </div>
+        </div>
+
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
+          <a href=""><img class="w-full h-40 " src="./Portfolio/E-commerce.png" alt="Card-Image">
+          <div class="p-4 text-center">
+            <h2 class="text-lg font-semibold text-white">E-commerce:</h2>
+            <p class="text-white mt-2"> Coming soon...</p></a>
+          </div>
+        </div>
+
+     </div>
+
+    </div>
+  
+    </section>
+
+
+
+
+
+ <section id="Contatti">
+
+  <div class="text-2xl text-white flex justify-center items-center text-center pt-15 ">
+    <h3>Contatti:</h3>
+  </div>
+  
+<div class="pt-10 pl-4 flex" id="prova">
+
+  <form class="w-110 p-6 bg-black border-2 border-green-900 text-white rounded-lg sm:w-1/2 ">
+    <div class="mb-4">
+      <label for="name" class="block text-sm font-semibold mb-2">Name</label>
+      <input type="text" id="name" name="name" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your name">
+    </div>
+  
+    <div class="mb-4">
+      <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+      <input type="email" id="email" name="email" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your email">
+    </div>
+  
+    <div class="mb-4">
+      <label for="message" 
+      class="block text-sm font-semibold mb-2">Message</label>
+      <textarea id="message" name="message" rows="4" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your message"></textarea>
+    </div>
+  
+    <button type="submit"
+     class=" w-full p-2 bg-green-900 text-white rounded hover:bg-green-700 
+     focus:outline-none focus:ring-2 focus:ring-green-400 cursor-pointer">
+     Scrivimi!</button>
+  </form>
+
+
+
+ <div class="flex flex-col bg-black border-2 rounded-lg border-green-900
+ ml-10 w-110 h-50" id="prova2">
+  
+  <h3 class="text-center p-2">I miei social:</h3>
+
+  <div class="flex justify-center items-center gap-20 h-[50%]">
+  <img class="w-15 hover:scale-110 cursor-pointer" src="./github-white-icon.svg" alt="">
+  <img class="w-15 hover:scale-110 cursor-pointer" src="./linkedin-app-icon.svg" alt="">
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+    
+<footer class="bg-green-900 h-30 w-full mt-20 relative flex flex-col justify-between items-center">
+  <svg id="scroll-up" xmlns="http://www.w3.org/2000/svg" 
+        fill="none" viewBox="0 0 24 24" 
+        stroke-width="1.5" stroke="currentColor" 
+        class="size-8 absolute left-1/2 transform -translate-x-1/2 top-1 cursor-pointer 
+        transition-all duration-150 ease-in-out 
+        hover:hover:rounded-full hover:text-green-400 hover:scale-120 hover:pb-4">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+  </svg>
+    
+  <div class="flex justify-center items-center gap-8 flex-grow pt-8">
+    <img class="w-6 cursor-pointer" src="./github-white-icon.svg" alt="GitHub">
+    <img class="w-6 cursor-pointer" src="./linkedin-app-icon.svg" alt="LinkedIn">
+    
+  </div>
+
+  <div class="text-center mb-1 text-sm">
+    <p>&copy; 2025 MartinWebDev. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+   
+<script src="script.js"></script>
+</body>
+</html>
