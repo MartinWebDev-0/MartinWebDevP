@@ -37,17 +37,17 @@
             8.495a18.023 18.023 0 0 1-3.827-5.802" />
             </svg>
           </div>
-        
+          
             <!-- Menu lingua  -->
             <div id="language-menu" class="absolute w-30 hidden">
-              <ul class="list-none flex flex-col pt-4">
-               <li data-lang="en" class="cursor-pointer hover:text-green-400">English</li>
-               <li data-lang="it" class="cursor-pointer hover:text-green-400">Italiano</li>
+              <ul class="list-none flex flex-col pt-4 gap-2">
+               <li data-lang="en" class="text-lg p-2 rounded-lg cursor-pointer hover:text-green-400 hover:border-2 border-green-400">English</li>
+               <li data-lang="it" class="text-lg p-2 rounded-lg cursor-pointer hover:text-green-400 hover:border-2 border-green-400">Italiano</li>
               </ul>
              </div>
 
 
-      <ul class="hidden sm:flex flex flex-row ml-auto gap-4 items-center">
+      <ul class=" sm:flex flex flex-row ml-auto gap-4 items-center">
             <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#">Home</a></li>
             <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#Portfolio">Portfolio</a></li>
             <li class="hover:underline hover:text-green-400 transition delay-150 hover:scale-110"><a href="#Contatti">Contatti</a></li>
@@ -58,14 +58,14 @@
 
  <!-- section 1 -->
 
-    <section class="flex text-center justify-center items-center h-screen ml-4">
+    <section class="flex text-center justify-center items-center h-screen ml-2 sm:ml-4">
 
-        <div class="mb-30">
+        <div class="mb-10">
             <h1 class="font-bold text-6xl hover:text-green-400 transition delay-150">Benvenuto.</h1>
             <p class="text-2xl hover:text-green-400 transition delay-150">Sono Martin, junior web developer.</p>
 
-            <a href="">
-                <img class="w-8 pt-5 ml-50 "
+            <a href="" class="sm:block hidden">
+                <img class="w-8 pt-5 ml-50"
                 src="./github-white-icon.svg" 
                  alt="github">
                  
@@ -147,7 +147,7 @@
      </div>
 <div id="breakpoint">
 
-   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 lg:px-25">
           <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
             <a href=""><img class="w-full h-40 bg-zinc-200" src="./Portfolio/sunnyside.svg" alt="Card-Image">
               <div class="p-4 text-center">
@@ -173,7 +173,7 @@
           </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 pt-5">
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 pt-5 lg:px-25">
         <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-green-900 ml-4">
           <a href=""><img class="w-full h-40 object-cover bg-zinc-200" src="./Portfolio/spacex.png" alt="Card-Image">
             <div class="p-4 text-center">
@@ -217,18 +217,18 @@
     <form class="w-full sm:w-1/2 p-6 bg-black border-2 border-green-900 text-white rounded-lg mb-4 sm:mb-0">
       <div class="mb-4">
       <label for="name" class="block text-sm font-semibold mb-2">Name</label>
-      <input type="text" id="name" name="name" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your name">
+      <input type="text" id="name" name="name" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Nome">
     </div>
   
     <div class="mb-4">
       <label for="email" class="block text-sm font-semibold mb-2">Email</label>
-      <input type="email" id="email" name="email" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your email">
+      <input type="email" id="email" name="email" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="E-mail">
     </div>
   
     <div class="mb-4">
       <label for="message" 
       class="block text-sm font-semibold mb-2">Message</label>
-      <textarea id="message" name="message" rows="4" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter your message"></textarea>
+      <textarea id="message" name="message" rows="4" class="w-full p-2 bg-black border-2 border-green-400 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Scrivi un messaggio!"></textarea>
     </div>
   
     <button type="submit"
@@ -239,14 +239,16 @@
 
 
 
- <div class="flex flex-col bg-black border-2 rounded-lg border-green-900
- ml-5 w-110 h-50">
   
-  <h3 class="text-center p-2">I miei social:</h3>
+ <div class="w-full mr-5 p-15
+ sm:w-1/2 bg-black border-2 border-green-900 text-white rounded-lg ">
 
-  <div class="flex justify-center items-center gap-10 h-[50%]">
+  <h3 class="text-center p-2 pb-4 text-2xl">I miei social:</h3>
+
+  <div class="flex flex-col justify-center items-center gap-8">
   <img class="w-15 hover:scale-110 cursor-pointer" src="./github-white-icon.svg" alt="">
   <img class="w-15 hover:scale-110 cursor-pointer" src="./linkedin-app-icon.svg" alt="">
+  <img class="w-18 hover:scale-110 cursor-pointer" src="./download.png" alt="">
   </div>
 
 </div>
@@ -271,7 +273,8 @@
   <div class="flex justify-center items-center gap-8 flex-grow pt-8">
     <img class="w-6 cursor-pointer" src="./github-white-icon.svg" alt="GitHub">
     <img class="w-6 cursor-pointer" src="./linkedin-app-icon.svg" alt="LinkedIn">
-    
+
+
   </div>
 
   <div class="text-center mb-1 text-sm">
